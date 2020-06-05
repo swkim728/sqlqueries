@@ -1,0 +1,15 @@
+Situation: did recon data but delta was off for gross return.
+ran a sql query to sum the pnl across the days of may
+***
+SELECT sum(pl_total_base)
+FROM novus_master.dbo.client_position 
+where client_id = 140 and client_portfolio_id = 1193
+and datadate between '20200501' and '20200531';
+***
+returned Novus Gross P%L value exactly.
+
+Hi Joy,
+It seems we have received some inaccurate P&l for the month of May. Can you please advise if any of these dates are wrong
+
+Thanks,
+Sangwon Kim
